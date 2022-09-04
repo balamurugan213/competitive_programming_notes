@@ -1,6 +1,6 @@
 # Problem 1
 
-Given 2 arrays, create a function that  lets a user know (true/false) weather these two arrays caontain any common items
+Given 2 arrays, create a function that  lets a user know (true/false) weather these two arrays contains any common items
 
 ## Example 1
 
@@ -10,7 +10,7 @@ array 1 =['a','b','c','x']
 
 array 2 =['z','y','i']
 
-returs **false**
+returns **false**
 
 ---
 
@@ -22,4 +22,4 @@ array 1 =['a','b','c','x']
 
 array 2 =['z','y','x']
 
-returs **true**
+returns **true**
