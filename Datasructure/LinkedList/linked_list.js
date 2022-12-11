@@ -8,6 +8,11 @@ class LinkedList{
         this.length=1;
     }
 
+    /**
+    * Appending a node to the end of the Linked list
+    * @param  {Number} value The value for the new node
+    * @return {Node}      The head Node after adding the new node
+    */
     append(value){
         const newNode={
             value:value,
@@ -19,6 +24,11 @@ class LinkedList{
         return this.head;
     }
 
+    /**
+    * Appending a node to the start of Linked list
+    * @param  {Number} value The value for the new node
+    * @return {Node}      The head Node after adding the new node
+    */
     prepend(value){
         const newNode={
             value:value,
@@ -30,6 +40,11 @@ class LinkedList{
         return this.head;
     }
 
+    /**
+    * Get the Pic string of the Linked list #recursive #private
+    * @param  {Node} currentNode Starting point of the oic string
+    * @return {String}      Pic String with -->
+    */
     _showList(currentNode){
         if(currentNode){
             return currentNode.value+"-->"+this._showList(currentNode.next);
@@ -40,10 +55,21 @@ class LinkedList{
         
     }
 
+    /**
+    * Print in console 
+    * @param  {}          -
+    * @return {Null}      -
+    */
     printList(){
         console.log(this._showList(this.head))
     }
 
+    /**
+    * insert a node after particular index
+    * @param  {Number} index Insert position for the new node
+    * @param  {Number} value The value for the new node
+    * @return {Node}      The head Node after adding the new node
+    */
     insert(index,value){
         let newNode={
             value:value,
@@ -57,6 +83,11 @@ class LinkedList{
 
     }
 
+    /**
+    * Remove a node at particular index
+    * @param  {Number} index Insert position for the new node
+    * @return {Node}      Node the removed form linked_list
+    */
     remove(index){
         let currentNode=this.traverseToIndex(index-1);
         let unwantedNode=currentNode.next;
@@ -66,6 +97,11 @@ class LinkedList{
         return unwantedNode;
     }
 
+    /**
+    * Get the node from particular index
+    * @param  {Number} index  position of the node
+    * @return {Node}      Node the removed form linked_list
+    */
     traverseToIndex(index){
     let currentNode =this.head;
     for(let i=0;i<index;i++){
