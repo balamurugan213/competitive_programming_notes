@@ -18,7 +18,7 @@ def getMoneySpent(keyboards, drives, b):
 
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    # fptr = open(os.environ['OUTPUT_PATH'], 'w')
 
     bnm = input().split()
 
@@ -37,7 +37,6 @@ if __name__ == '__main__':
     #
 
     moneySpent = getMoneySpent(keyboards, drives, b)
-
-    fptr.write(str(moneySpent) + '\n')
-
-    fptr.close()
+    print(moneySpent)
+    # fptr.write(str(moneySpent) + '\n')
+    # fptr.close()
